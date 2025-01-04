@@ -1,0 +1,14 @@
+user_list:
+  path: /users
+  controller: App\Controller\UserController::list
+  methods: ["GET"]
+
+user_create:
+  path: /users/create
+  controller: App\Controller\UserController::createUser
+  methods: ["GET", "POST"]
+
+user_edit:
+  path: /users/{id<\d+>}/edit
+  controller: App\Controller\UserController::editUser
+  methods: ["GET", "POST"]
